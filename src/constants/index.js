@@ -1,0 +1,3 @@
+const SET_FEATURE_STATE = "SET_FEATURE_STATE";
+
+export default { SET_FEATURE_STATE };

@@ -5,7 +5,7 @@ export const setFeatureState = (featureKey, state) => {
         type: constants.SET_FEATURE_STATE,
         payload: {
                 featureKey,
-                state
+                featureState
             }
     };
 }

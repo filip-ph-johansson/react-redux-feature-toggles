@@ -9,7 +9,7 @@ export default (toggles = initialState) => {
       case constants.SET_FEATURE_STATE:
         return {
           ...state,
-          [action.payload.featureKey]: action.payload.state
+          [action.payload.featureKey]: action.payload.featureState
         };
       default:
         return state;

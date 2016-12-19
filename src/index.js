@@ -1,5 +1,5 @@
 import featureTogglesReducer from './reducer';
-import featureTogglesInjector from './injector';
-import FeatureTogglesManager from './manager';
+import featureTogglesInjector from './components/injector';
+import FeatureTogglesManager from './components/manager';
 
 export { featureTogglesReducer, featureTogglesInjector, FeatureTogglesManager };

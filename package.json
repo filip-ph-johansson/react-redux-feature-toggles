@@ -8,7 +8,18 @@
     "compile": "babel --plugins transform-object-rest-spread --presets es2015,react -d lib/ src/",
     "prepublish": "npm run compile"
   },
+  "repository":
+  { 
+	"type" : "git",
+	"url" : "https://github.com/filip-ph-johansson/react-redux-feature-toggles.git"
+  },
   "author": "Filip Johansson",
+  "keywords": [
+	"react",
+	"redux",
+	"feature toggles",
+	"feature flags"
+  ],
   "license": "MIT",
   "dependencies": {
     "react": "^15.2.1",

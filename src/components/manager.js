@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { setFeatureState } from './actions';
+import { setFeatureState } from '../actions';
 import { bindActionCreators } from 'redux';
 
 class Manager extends React.Component {

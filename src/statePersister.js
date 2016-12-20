@@ -1,7 +1,6 @@
 import constants from './constants';
 
 const persistFeatureState = (featureKey, featureState) => {
-  debugger;
     let persistedState = JSON.parse(sessionStorage.getItem(constants.STORE_KEY)) || {};
 
     persistedState[featureKey] = featureState;

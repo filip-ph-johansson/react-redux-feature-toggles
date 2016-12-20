@@ -1,10 +1,14 @@
 import constants from './constants';
+import statePersister from './statePersister';
 
-const initialState = {
+const defaultState = {
 };
 
-export default (toggles = initialState) => {
-  return (state = toggles, action) => {
+export default (toggles = defaultState) => {
+  
+  const stateToBeUsed = statePersister.retrieveState() || toggles;
+
+  return (state = stateToBeUsed, action) => {
     switch (action.type) {
       case constants.SET_FEATURE_STATE:
         return {

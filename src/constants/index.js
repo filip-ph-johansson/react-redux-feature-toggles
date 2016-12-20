@@ -1,3 +1,4 @@
 const SET_FEATURE_STATE = "SET_FEATURE_STATE";
 
-export default { SET_FEATURE_STATE };
+const STORE_KEY = "FEATURE_TOGGLES";
+export default { SET_FEATURE_STATE, STORE_KEY };

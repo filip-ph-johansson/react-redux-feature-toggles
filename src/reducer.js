@@ -6,7 +6,9 @@ const defaultState = {
 
 export default (toggles = defaultState) => {
   
-  const stateToBeUsed = statePersister.retrieveState() || toggles;
+  const persistedState = statePersister.retrieveState();
+
+  const stateToBeUsed = {...toggles, ...persistedState}
 
   return (state = stateToBeUsed, action) => {
     switch (action.type) {

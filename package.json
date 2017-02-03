@@ -1,6 +1,6 @@
 {
   "name": "react-redux-feature-toggles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package for providing react-redux based feature toggles",
   "main": "./lib/index.js",
   "scripts": {
